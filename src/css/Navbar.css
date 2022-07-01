@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+.navbar:hover{
+    border-bottom: 5px solid #721ba9;
+    transition: all 0.2s ease-in-out;
+}

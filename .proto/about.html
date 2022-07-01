@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <a href="/">
+          <img src="html5.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="/">
+          <img src="css3.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="/">
+          <img src="halo.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="">
+          <img src="halo2.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="">
+          <img src="javascript.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="">
+          <img src="nodejs.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="">
+          <img src="php.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="">
+          <img src="python.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+        <a href="">
+          <img src="react.svg" alt="" srcset="" class="responsiveIcon" />
+        </a>
+      </div>
+      <div class="top">
+        <div class="navbar">
+          <h1>Logo</h1>
+          <div
+            class="hamburger-menu"
+            id="hamburger-menu"
+            onclick="myFunction()"
+          >
+            <div class="menu-bar1"></div>
+            <div class="menu-bar2"></div>
+            <div class="menu-bar3"></div>
+          </div>
+        </div>
+        <nav>
+          <div class="navbar2" id="myLinks">
+            <h3><a href="/home" class="btn">Home</a></h3>
+            <h3><a href="/About" class="btn active">About me</a></h3>
+            <h3><a href="/Education" class="btn">Education</a></h3>
+            <h3><a href="/Skills" class="btn">Skills</a></h3>
+          </div>
+        </nav>
+      </div>
+      <main>
+        <div class="content-left">
+          <h1>Projects</h1>
+          <h3>Pusat pelatihan semarang</h3>
+          <ul>
+            <li>hjaloalaoalal</li>
+            <li>adasdaad</li>
+            <li>ngentot</li>
+          </ul>
+          <!-- <h2><span>Address</span> <br> Semarang, Jawa Tengah</h2> -->
+          <h3>Pusat pelatihan semarang</h3>
+          <ul>
+            <li>hjaloalaoalal</li>
+            <li>adasdaad</li>
+            <li>ngentot</li>
+          </ul>
+          <h3>Pusat pelatihan semarang</h3>
+          <ul>
+            <li>hjaloalaoalal</li>
+            <li>adasdaad</li>
+            <li>ngentot</li>
+          </ul>
+        </div>
+        <div class="content-right">
+          <h3>Pusat pelatihan semarang</h3>
+          <ul>
+            <li>hjaloalaoalal</li>
+            <li>adasdaad</li>
+            <li>ngentot</li>
+          </ul>
+          <h3>Pusat pelatihan semarang</h3>
+          <ul>
+            <li>hjaloalaoalal</li>
+            <li>adasdaad</li>
+            <li>ngentot</li>
+          </ul>
+          <h3>Pusat pelatihan semarang</h3>
+          <ul>
+            <li>hjaloalaoalal</li>
+            <li>adasdaad</li>
+            <li>ngentot</li>
+          </ul>
+        </div>
+      </main>
+      <script>
+        const hamburgerMenu = document.querySelector("#hamburger-menu");
+        const overlay = document.querySelector("#overlay");
+        function toggleNav() {
+          hamburgerMenu.classList.toggle("active");
+          overlay.classList.toggle("overlay-active");
+
+          if (overlay.classList.contains("overlay-active")) {
+            overlay.classList.replace(
+              "overlay-slide-left",
+              "overlay-slide-right"
+            );
+            navAnimation("out", "in");
+          } else {
+            overlay.classList.replace(
+              "overlay-slide-right",
+              "overlay-slide-left"
+            );
+
+            navAnimation("in", "out");
+          }
+        }
+
+        hamburgerMenu.addEventListener("click", toggleNav);
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
