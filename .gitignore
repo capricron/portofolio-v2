@@ -6,7 +6,7 @@ node_modules
 /.pnp
 .pnp.js
 
-.proto
+1proto
 # testing
 /coverage
 
